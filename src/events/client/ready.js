@@ -4,7 +4,7 @@ module.exports = {
   name: "ready",
   once: true,
   async execute(client) {
-    console.log(`🟢 ${client.user.tag} is ready!`);
+    console.log('\x1b[1m\x1b[32m',`[4/4]---- ${client.user.tag} is ready!`,'\x1b[0m');
 
     const membercount = client.user.setPresence({
       activities: [{ name: `tes commandes ✨`, type: ActivityType.Watching }],
