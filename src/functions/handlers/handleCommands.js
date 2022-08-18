@@ -21,16 +21,12 @@ module.exports = (client) => {
         );
       }
     }
-
-    const { clientIdBrut, guildIdBrut } = process.env;
-
-    const clientId = clientIdBrut;
-    const guildId = guildIdBrut;
+    
     const rest = new REST({ version: "9" }).setToken(process.env.token);
     try {
       console.log("🔄 Starting refreshing slash commands...");
 
-      await rest.put(Routes.applicationGuildCommands(clientId, guildId), {
+      await rest.put(Routes.applicationGuildCommands(process.env.clientId, process.env.guildId), {
         body: client.commandArray,
       });
 
