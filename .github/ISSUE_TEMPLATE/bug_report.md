@@ -1,12 +1,13 @@
 ---
 name: Bug report
 about: Reporter un bug afin de m'aider !
-title: 'Ajouter la référence ainsi que la commande EX: [ReferenceError: errorlaunch
-  is not defined] /ping'
-labels: bug hunter
+title: ''
+labels: bug, hunter
 assignees: WaxenSs
 
 ---
+
+**MERCI DE NE PAS MODIFIER LE TITRE DE CET ISSUE.**
 
 **Compte Discord**
 Nom d'utilisateur Discord.
@@ -18,10 +19,6 @@ Une description claire et concise de ce qu'est le bug.
 
 **Référence**
 Copié collé la référence incluse dans le message vous annonçant que vous avez trouvé un bug.
-
-
-**Commande / interaction ?**
-La commande / interaction effectuée.
 
 
 **Contexte supplémentaire**
