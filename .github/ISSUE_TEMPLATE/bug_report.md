@@ -9,10 +9,6 @@ assignees: WaxenSs
 
 **MERCI DE NE PAS MODIFIER LE TITRE DE CET ISSUE.**
 
-**Compte Discord**
-Nom d'utilisateur Discord.
-
-
 **Décrivez le bug**
 Une description claire et concise de ce qu'est le bug.
 
