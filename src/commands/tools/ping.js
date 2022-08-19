@@ -2,7 +2,7 @@ const { SlashCommandBuilder, EmbedBuilder, AttachmentBuilder } = require('discor
 
 module.exports = {
     data: new SlashCommandBuilder()
-    .setName('ping')
+    .setName('ping-staff')
     .setDescription('Effectue un test de latence du bot'),
     async execute(interaction, client) {
         const message = await interaction.deferReply({
