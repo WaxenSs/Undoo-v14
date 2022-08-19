@@ -9,6 +9,9 @@ assignees: WaxenSs
 
 **MERCI DE NE PAS MODIFIER LE TITRE DE CET ISSUE.**
 
+**Commande**
+Nom de la commande.
+
 **Décrivez le bug**
 Une description claire et concise de ce qu'est le bug.
 
