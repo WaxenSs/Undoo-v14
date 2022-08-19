@@ -1,4 +1,4 @@
-const { SlashCommandBuilder, EmbedBuilder, AttachmentBuilder } = require('discord.js');
+const { EmbedBuilder, AttachmentBuilder } = require('discord.js');
 
 module.exports = {
   name: "interactionCreate",
@@ -31,10 +31,11 @@ module.exports = {
             .setFooter({ text: interaction.user.id })
             .setTimestamp();
           logChannel.send({ embeds: [logEmbed], files: [imgBadge] });
-          return console.log("\x1b[32m", `📨 [ ${interaction} ] ⇢ [ ${interaction.user.tag} (${interaction.user.id}) ] dans [ ${interaction.channel.name} ]`);
+
+          return console.log('\x1b[34m', `[STAFF LOGS] \x1b[1m${interaction}\x1b[0m\x1b[34m ► ${interaction.user.tag} (${interaction.user.id}) in ${interaction.channel.name}`);
         } else {
           if (interaction.commandName === "confession") {
-            return console.log("\x1b[32m", `📨 [ ${interaction} ] ⇢ [ ${interaction.user.id} ] dans [ ${interaction.channel.name} ]`);
+            return console.log('\x1b[34m', `[MEMBER LOGS] \x1b[1m${interaction}\x1b[0m\x1b[34m ► ${interaction.user.id} in ${interaction.channel.name}`);
           } else {
             const imgBadge = new AttachmentBuilder("./src/database/img/badges/member-badge.png");
   
@@ -53,7 +54,7 @@ module.exports = {
               .setFooter({ text: interaction.user.id })
               .setTimestamp();
             logChannel.send({ embeds: [logEmbed], files: [imgBadge] });
-            return console.log("\x1b[32m", `📨 [ ${interaction} ] ⇢ [ ${interaction.user.tag} (${interaction.user.id}) ] dans [ ${interaction.channel.name} ]`);
+            return console.log('\x1b[34m', `[MEMBER LOGS] \x1b[1m${interaction}\x1b[0m\x1b[34m ► ${interaction.user.tag} (${interaction.user.id}) in ${interaction.channel.name}`);
           };
         };
       } catch (error) {
