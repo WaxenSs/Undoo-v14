@@ -4,9 +4,9 @@ module.exports = {
   name: "ready",
   once: true,
   async execute(client) {
-    console.log('\x1b[1m\x1b[32m',`[4/4]---- ${client.user.tag} is ready!`,'\x1b[0m');
+    console.log('\x1b[34m',`[BOOT 1/2]- \x1b[1m${client.user.tag} just booted!`,'\x1b[0m');
 
-    const membercount = client.user.setPresence({
+    client.user.setPresence({
       activities: [{ name: `tes commandes ✨`, type: ActivityType.Watching }],
       status: "online",
     });
@@ -24,5 +24,7 @@ module.exports = {
       .setFooter({ text: client.user.id })
       .setTimestamp();
     await logChannel.send({ embeds: [logEmbed], files: [imgBadge] });
+    console.log('\x1b[34m\x1b[2m',`[BOOT 2/2]-- \x1b[1mBoot confirmation sent in ${logChannel.name} channel`,'\x1b[0m');
+
   },
 };
